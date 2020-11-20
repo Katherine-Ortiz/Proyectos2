@@ -1,0 +1,5 @@
+20,Tesla,2900,verde
+39,Mazda,2000,azul
+12,Audi,5000,negro
+34,Tesla,3000,verde
+12,Mazda,2500,blanco
