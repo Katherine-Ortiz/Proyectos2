@@ -30,7 +30,6 @@ public class Principal{
                 double va = scan.nextDouble();
                 System.out.println("Ingrese color del vehiculo");
                 String co = scan.next();
-
                 Vehiculo V1 = new Vehiculo(mo, ma, va, co);
                 break;
 
@@ -51,11 +50,9 @@ public class Principal{
                 try{ 
                     System.out.println("Ingrese Id del vehiculo");
                     int identificacion = scan.nextInt();
-
                     Vehiculo v1 = new Vehiculo();
                     v1 = Vehiculo.obtenerVehiculo(identificacion);
                     System.out.println("información de vehiculo: " + v1.toString());
-
                 }catch(Exception e){
                     System.out.println("No se encuentra el vehiculo con ese Id");
                 }
@@ -77,6 +74,7 @@ public class Principal{
                     System.out.println("Error, el vehiculo no se encuentra registrado");
                 }
                 break;
+                
                 case 7:
                 try{
                     System.out.println("Ingrese un id");
@@ -87,12 +85,15 @@ public class Principal{
                     System.out.println("el vehiculo con el Id ingresado no se encuentra registrado");
                 }
                 break;
+                
                 case 8:
                 System.out.println("Información sensores temperatura: " + Vehiculo.vehiculoSensores());
                 break;
+                
                 case 9:
                 System.out.println("Información vehiculo con más sensores " + Vehiculo.vehiculoMasSensores());   
                 break;
+                
                 case 10:
                 File file = new File("vehiculos.txt");
                 try{

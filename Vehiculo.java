@@ -17,7 +17,6 @@ public class  Vehiculo{
 
     public Vehiculo(int mo, String ma, double va){
         this(mo, ma,va,"verde");
-
     } 
 
     public Vehiculo(int mo, String ma, double va, String co){
@@ -35,7 +34,6 @@ public class  Vehiculo{
 
     public int getModelo(){
         return this.modelo;
-
     }
 
     public void setModelo(int mo){
@@ -68,7 +66,6 @@ public class  Vehiculo{
 
     public int getId(){
         return this.id;
-
     }
 
     public void setId(int i){
@@ -88,7 +85,6 @@ public class  Vehiculo{
         String salida = "";
         for(int i = 0; i < vehiculos.size(); i++){
             salida = vehiculos.toString()+ "\n";
-
         }   
         return salida;
     } 
@@ -119,34 +115,27 @@ public class  Vehiculo{
         String buscar= "";
         for(int i = 0; i < vehiculos.size(); i++){
             if(vehiculos.get(i).getId() == identificacion){
-
                 buscar = vehiculos.get(i).toString()+ "\n";
             }
-
         }
         return buscar;
     }
 
     public static Vehiculo obtenerVehiculo(int idv){
-
         Vehiculo v1=null;
         for(int i = 0; i < vehiculos.size(); i++){
             if(vehiculos.get(i).getId() == idv){
                 v1 = vehiculos.get(i);
             }
-
         }
         return v1;
-
     }
 
     public static String vehiculoMasSensores(){
         Vehiculo v1 = vehiculos.get(0);
-
         for(int i = 0; i < vehiculos.size(); i++){
             if(vehiculos.get(i).sensores.size()> v1.sensores.size()){
                 v1 = vehiculos.get(i);
-
             }
         }
         String vehiculo = v1.toString();

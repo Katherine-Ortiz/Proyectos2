@@ -5,7 +5,6 @@ public class Bicho{
     private String nombre= "    ";
     
     public Bicho(){
-
     }
 
     public Bicho(int salud, String nombre){
@@ -49,7 +48,6 @@ public class Bicho{
                 fila=0;
             }            
         }
-        
     }
 
     public static void mostrarTablero(){
@@ -58,7 +56,7 @@ public class Bicho{
             "|"+arreglo[1][0].getNombre() + arreglo[1][0].getSalud()+"|"+arreglo[1][1].getNombre() + arreglo[1][1].getSalud()+"|\n"+
             "--------------\n");
     }
-    //disparo(0,0);
+    
     public static void disparo(int i, int j){
         arreglo[i][j].setSalud(arreglo[i][j].getSalud()-5);
     }
